@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <style>
+      
+
+body{
+    height: 120vh;
+     background-image: url(../images/bg7.png);
+     background-position: center;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+} 
+
+
+.upper{
+
+     height: 200px;
+    
+}
+
+.a{
+    
+    height: 200px;
+}
+
+.ro{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 2px;
+    background-color: black;
+    border: 10px solid green;
+}
+
+.row{
+margin-top: 100px;
+}
+
+
+img{
+    
+    height: 160px;
+    width: 159px;
+    margin: 15px;
+    border-radius: 377px;
+    border: 3px solid green;
+    margin-left: 52px;
+    margin-top: 15px;
+    
+}
+
+.left{
+    margin-left: 5px;
+    width: 100%;
+}
+
+
+
+
+.row{
+
+    margin: 10px 30px;
+}
+
+.int{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 2px;
+    grid-gap: 7px;
+    margin-top: -4px;
+}
+
+.b{
+    /* border: 2px solid black;  */
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 5px;
+    background-color: green;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+.skills{
+
+    margin-bottom: 20px;
+}
+
+.ski{
+
+    background-color: green;
+    margin: 40px 5px;
+    color: white;
+}
+
+
+.r{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    margin: 30px 20px;
+}
+
+/* education */
+
+.gr{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.educ{
+    margin: 15px;
+}
+
+.lar{
+    margin-top: 25px;
+}
+
+.fl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.btna
+{
+  color: green;
+  width: 89px;
+  height: 37px;
+  background-color:black;
+  font-size: 18px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+
+.contain{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.left1{
+    width: 100%;
+}
+
+.right1{
+    width: 95%;
+
+
+}
+
+
+.fle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* .b{
+    width: 145px;
+    margin: 5px;
+} */
+  </style>
+ 
+  <title>Resume</title>
+</head>
+
+<body>
+
+  <form action="/template5.html" method="post">
+  <div class="upper">
+
+
+    <div class="ro">
+      
+      <div class="a">
+        <input type="name" id="name" name="name" class="form-control" placeholder="Your Name"
+          style="background-color: black;border: none; font-size: 35px; color: white;" />
+        <input type="text" id="post" name="post" class="form-control" placeholder="Buisness Development Manager"
+          style="background-color: black;border: none; font-size: 15px; color: green; " />
+        <textarea id="work" name="work" class="form-control" placeholder="Write your work here." rows="5"
+          style="border: none; height: 90px; color: white; background-color: black;"></textarea>
+
+      </div>
+
+
+
+
+
+      <div class="a">
+        <input type="email" id="email" name="email" class="form-control" placeholder="name@gmail.com"
+          style=" background-color: black; border: none;">
+        <input type="phone" id="phone" name="phone" class="form-control" placeholder="202-555-01666"
+          style="background-color: black; border: none;">
+        <textarea id="address" name="address" class="form-control" placeholder="New York,USA" rows="5"
+          style="border: none; height: 1%;background-color: black; "></textarea>
+        <textarea id="Linlein" name="linkedin" class="form-control" placeholder="Linlein.com/yadali" rows="5"
+          style="border: none; height: 1%;background-color: black; "></textarea>
+        <textarea id="insta" name="insta" class="form-control" placeholder="Yadali10" rows="5"
+          style="border: none; height: 1%;background-color: black; "></textarea>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row contain" style="margin-top: 70px;">
+    <div class="col-sm-7 left1">
+      <h4 class="fl" style="color:green">Education</h4>
+      <div class="edu" >
+
+        <div class="row gr" style="margin-top: 5px;">
+          <div class="left">
+            <div class="educ">
+              <textarea id="course1" name="course1" class="form-control" placeholder="Course" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" >
+              <textarea id="cduration1" name="cduration1" class="form-control" placeholder="Duration" rows="8"
+                style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+            <div class="educ lar" >
+              <textarea id="course2" name="course2" class="form-control" placeholder="Course" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" style="height: 80px; ">
+              <textarea id="cduration2" name="cduration2" class="form-control" placeholder="Duration" rows="8"
+                style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+            <div class="educ lar" >
+              <textarea id="course3" name="course3" class="form-control" placeholder="Course" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" >
+              <textarea id="cduration3" name="cduration3" class="form-control" placeholder="Duration" rows="8"
+                style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+
+          </div>
+
+
+          <div class="right" style="border-left: solid green;">
+            <div class="educ"  >
+              <textarea id="institute1" name="institure1" class="form-control" placeholder="Institute" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" >
+              <textarea id="subject1" name="subject1" class="form-control"
+                placeholder="Write your subjects here. Subject we have studied her lorem Anything you want to say about yourself  lorem hts hst "
+                rows="8" style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+            <div class="educ lar">
+              <textarea id="institure2" name="institute2" class="form-control" placeholder="Institute" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" >
+              <textarea id="subject2" name="subject2" class="form-control"
+                placeholder="Write your subjects here. Subject we have studied her htszxh sdytx htszxh lorem hts hst sdytx htszxh ?"
+                rows="8" style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+            <div class="educ lar" >
+              <textarea id="institure3" name="institute3" class="form-control" placeholder="Institute" rows="8"
+                style="border: none; font-size: 20px; height: 30px;"></textarea>
+            </div>
+            <div class="educ" >
+              <textarea id="subject3" name="subject3" class="form-control"
+                placeholder="Write your subjects here. Subject we have studied her sdytx htszxh lorem hts hst sdytx htszhtszxh?"
+                rows="8" style="border: none; font-size: 15px; height: 55px;"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+      <h4 class="fl" style="color:green; margin-top: 20px;">Work experience</h3>
+        <div class="exp" >
+          <div class="row gr" style="margin-top: 25px;">
+            <div class="left">
+              <div class="educ" >
+                <textarea id="wpost1" name="wpost1" class="form-control" placeholder="Post" rows="8"
+                  style="border: none; font-size: 20px; height: 30px;"></textarea>
+              </div>
+              <div class="educ" style="height: 55px;">
+                <textarea id="wduration1" name="wduration1" class="form-control" placeholder="Duration" rows="8"
+                  style="border: none; font-size: 15px; height: 55px;"></textarea>
+              </div>
+              <div class="educ lar" >
+                <textarea id="wpost2" name="wpost2" class="form-control" placeholder="Post" rows="8"
+                  style="border: none; font-size: 20px; height: 30px;"></textarea>
+              </div>
+              <div class="educ" style="height: 55px;">
+                <textarea id="wduration2" name="wduration2" class="form-control" placeholder="Duration" rows="8"
+                  style="border: none; font-size: 15px; height: 55px;"></textarea>
+              </div>
+              <div class="educ lar" >
+                <textarea id="wpost3" name="wpost3" class="form-control" placeholder="Post" rows="8"
+                  style="border: none; font-size: 20px; height: 30px;"></textarea>
+              </div>
+              <div class="educ">
+                <textarea id="wduration3" name="wduration3" class="form-control" placeholder="Duration" rows="8"
+                  style="border: none; font-size: 15px; height: 55px;"></textarea>
+              </div>
+
+            </div>
+
+
+            <div class="right" style="border-left: solid green;">
+              <div class="educ">
+                <textarea id="company1" name="company1" class="form-control" placeholder="Company" rows="8"
+                  style="border: none; font-size: 20px; height: 35px;"></textarea>
+              </div>
+              <div class="educ" >
+                <textarea id="achievment1" name="achievment1" class="form-control"
+                  placeholder="Successfully managed $2-$3 million budget Project and successfully achieved the project schedule goal"
+                  rows="8" style="border: none; font-size: 15px; height: 70px;"></textarea>
+              </div>
+              <div class="educ lar" >
+                <textarea id="company2" name="company2" class="form-control" placeholder="Company" rows="8"
+                  style="border: none; font-size: 20px; height: 35px;"></textarea>
+              </div>
+              <div class="educ" >
+                <textarea id="achievment2" name="achievment2" class="form-control"
+                  placeholder="Successfully managed $2-$3 million budget Project and successfully achieved the project schedule goal"
+                  rows="8" style="border: none; font-size: 15px; height: 70px;"></textarea>
+              </div>
+              <div class="educ lar" >
+                <textarea id="company3" name="company3" class="form-control" placeholder="Company" rows="8"
+                  style="border: none; font-size: 20px; height: 35px;"></textarea>
+              </div>
+              <div class="educ" >
+                <textarea id="achievment3" name="achievment3" class="form-control"
+                  placeholder="Successfully managed $2-$3 million budget Project and successfully achieved the project schedule goal"
+                  rows="8" style="border: none; font-size: 15px; height: 70px;"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="col-sm-5 right1" style="border-left: thick solid green; 
+    height: 1006px;">
+      <h4 class="fl" style="color:green;">Skills</h3>
+        <div class="skills" style="height: 400px;">
+
+
+          <select class="form-select form-select-lg mb-3 ski" name="google_analytics"
+            aria-label=".form-select-lg example">
+            <option selected>Google Analytics</option>
+            <option value="1" style="color: yellow;">Google
+              Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Below 25%</option>
+            <option value="2" style="color: yellow;">Google
+              Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Between 25%-50%</option>
+            <option value="3" style="color: yellow;">Google
+              Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Between 50%-75%</option>
+            <option value="4" style="color: yellow;">Google
+              Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Above 75%</option>
+
+          </select>
+          <select class="form-select form-select-lg mb-3 ski" name="public_spealing"
+            aria-label=".form-select-lg example">
+            <option selected>Public Speaking</option>
+            <option value="1" style="color: yellow;">Public
+              Speaking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Below 25%</option>
+            <option value="2" style="color: yellow;">Public
+              Speaking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Between 25%-50%</option>
+            <option value="3" style="color: yellow;">Public
+              Speaking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Between 50%-75%</option>
+            <option value="4" style="color: yellow;">Public
+              Speaking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Above 75%</option>
+          </select>
+          <select class="form-select form-select-lg mb-3 ski" name="email_marketing"
+            aria-label=".form-select-lg example">
+            <option selected>Email Marketing</option>
+            <option value="1" style="color: yellow;">Email
+              Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Below 25%</option>
+            <option value="2" style="color: yellow;">Email
+              Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Between 25%-50%</option>
+            <option value="3" style="color: yellow;">Email
+              Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Between 50%-75%</option>
+            <option value="4" style="color: yellow;">Email
+              Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Above 75%</option>
+          </select>
+          <select class="form-select form-select-lg mb-3 ski" name="team_work" aria-label=".form-select-lg example">
+            <option selected>Team Work</option>
+            <option value="1" style="color: yellow;">Team
+              Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Below 25%</option>
+            <option value="2" style="color: yellow;">Team
+              Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Between 25%-50%</option>
+            <option value="3" style="color: yellow;">Team
+              Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Between 50%-75%</option>
+            <option value="4" style="color: yellow;">Team
+              Work&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Above 75%</option>
+          </select>
+
+
+
+        </div>
+
+        <h4 class="fl" style="color:green; margin-top: -70px ; margin-bottom: 20px;">Interest</h3>
+          <div class="edu" style="height: 150px; ">
+
+            <div class="int">
+              <textarea id="interest1" name="interest1" class="form-control b" placeholder="Reading" rows="8"></textarea>
+              <textarea id="interest2" name="interest2" class="form-control b" placeholder="Singing" rows="8"></textarea>
+              <textarea id="interest3" name="interest3" class="form-control b" placeholder="Coding" rows="8"></textarea>
+              <textarea id="interest4" name="interest4" class="form-control b" placeholder="Cricket" rows="8"></textarea>
+              <textarea id="interest5" name="interest5" class="form-control b" placeholder="Dancing" rows="8"></textarea>
+              <textarea id="interest6" name="interest6" class="form-control b" placeholder="Badminton" rows="8"></textarea>
+            </div>
+
+          </div>
+
+
+          <h4 class="fl" style="color:green; margin-top: 60px; margin-bottom: 40px;">Languages</h3>
+            <div class="edu" style="height: 350px;">
+
+              <div class="educ"></div>
+              <div class="r">
+                <h3 class="lang">English</h3>
+
+                <input type="radio" class="btn-check" name="options_outlined" id="success-outlined" autocomplete="off">
+                <label class="btn btn-outline-success" for="success-outlined">YES</label>
+
+
+                <input type="radio" class="btn-check " name="options_outlined" id="danger-outlined" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined">NO</label>
+
+              </div>
+              <div class="r">
+                <h3 class="lang">Japanese</h3>
+
+                <input type="radio" class="btn-check" name="options_outlined1" id="success-outlined1"
+                  autocomplete="off">
+                <label class="btn btn-outline-success" for="success-outlined1">YES</label>
+
+
+                <input type="radio" class="btn-check" name="options_outlined1" id="danger-outlined1" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined1">NO</label>
+
+              </div>
+              <div class="r">
+                <h3 class="lang">French</h3>
+
+                <input type="radio" class="btn-check c" style="background-color: #0aab2d;" name="options_outlined2"
+                  id="success-outlined2" autocomplete="off">
+                <label class="btn btn-outline-success" for="success-outlined2">YES</label>
+
+
+                <input type="radio" class="btn-check" name="options-outlined2" id="danger-outlined2" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined2">NO</label>
+
+
+
+              </div>
+
+
+            </div>
+    </div>
+
+
+  </div>
+  
+
+  </div>
+
+  </div>
+  </div>
+
+  <div class="fle">
+    <input type="submit" class="btna" name="button" value="Submit">
+    <input type="reset" class="btna" name="reset" value="Reset">
+  </div>
+
+
+
+</form>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

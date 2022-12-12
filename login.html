@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Resume builder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href=""
+          ><span class="text-danger"><strong>R</strong></span
+          >esume<span class="text-danger"><strong>Easy</strong></span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">FAQ</a>
+            </li>
+          </ul>
+          
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- login and registration process -->
+    
+    <div class="login-container">
+        <div class="login-register">
+            <div class="nav-buttons">
+                <button id="loginBtn" class='active' >Login </button>
+                <button id="registerBtn">Register</button>
+            </div>
+            <div class="form-group-login">
+                <form action="" id="loginform">
+                    <label for="username">username</label>
+                    <input type="text" id="username">
+                    <label for="password">password</label>
+                    <input type="text" id="password">
+                    <!-- <input type="submit" value="Submit" class="submit"> -->
+                    <button class="submit"><a href="/index.html" >Submit</a></button>
+                </form>
+                
+                <form action="" id="registerform" >
+                    <label for="fullname">fullname</label>
+                    <input type="text" id="fullname">
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                    <label for="username">username</label>
+                    <input type="text" id="username">
+                    <label for="passwword">password</label>
+                    <input type="password" id="password">
+                    
+                    <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="submit" />
+	                  <input type="submit" value="Create Account" class="submit" onclick="registration()" /></td>
+                </form>
+            </div>
+            <div id="forgot">
+                <a href="">forgot password?</a>
+            </div>
+        </div>
+
+    </div>
+    
+ 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="index.js"></script>
+     <script>
+       var loginBtn = document.getElementById("loginBtn");
+  var registerBtn = document.getElementById("registerBtn");
+  var loginform = document.getElementById("loginform");
+  var registerform = document.getElementById("registerform");
+  var forgot = document.getElementById("forgot");
+
+  registerBtn.onclick= function() {
+      registerform.style.left='0px';
+      registerform.style.opacity='1';
+      loginform.style.left='-500px';
+      loginform.style.opacity='0';
+      forgot.style.left='-500px';
+      forgot.style.opacity='0';
+      registerBtn.classList.add('active');
+      loginBtn.classList.remove('active');
+
+  }
+
+  loginBtn.onclick= function() {
+      loginform.style.left='0px';
+      loginform.style.opacity='1';
+      forgot.style.left='0px';
+      forgot.style.opacity='1';
+      registerform.style='500px';
+      loginBtn.classList.add('active');
+      registerBtn.classList.remove('active');
+      registerform.style.opacity='0';
+  }
+     </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

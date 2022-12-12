@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <style>
+      * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  flex: 0.35;
+  background: #aaa;
+}
+
+.right-container {
+  flex: 0.65;
+  background: #171719;
+  padding: 32px 48px;
+}
+
+.profile-img {
+  background-color: #9949a0;
+    /* background-image: url(https://images.unsplash.com/photo-1582558529483-4cec1ba65d0d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60); */
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.name {
+  width: 400px;
+  height: 48px;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.job {
+  text-align: center;
+  width: 250px;
+  height: 32px;
+  font-size: 1.05rem;
+  color: rgb(241, 223, 223);
+}
+
+.links {
+  margin-bottom: 100px;
+}
+
+.links .fab {
+  color: white;
+  margin: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  color: white;
+  font-family: sans-serif;
+}
+
+.about-me,
+.my-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me h1,
+.my-services h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.about-me input,
+.my-services input {
+  color: #9949a0;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.about-me textarea,
+.my-services textarea {
+  color: #7c7c7e;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  width: 100%;
+  height: 1px;
+  background: yellow;
+}
+
+.row {
+  margin-top: 24px;
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  margin-right: 50px;
+}
+
+.col input {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.icon {
+  color: #9949a0;
+  font-size: 2rem;
+}
+
+.btn
+{
+  color: #9949a0;
+  width: 83px;
+  height: 33px;
+  background-color: white;
+  font-size: 18px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+/* .fle{
+  margin-left: 20px;
+} */
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="left-container">
+      <div class="profile-img">
+        <input class="name" type="text" name="name" value="Jane Doe" title="name" />
+        <input class="job" type="text" name="job" title="job" value="Developer" />
+        <div class="links">
+          <a href="https://www.linkedin.com" class="fab fa-linkedin-in"></a>
+          <a href="https://www.github.com" class="fab fa-github"></a>
+          <a href="https://www.twitter.com" class="fab fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <section class="about-me">
+        <h1 class="title">about me</h1>
+        <input type="text" value="Freelance" name="work" title="current working" />
+        <textarea cols="30" name="description1" rows="2">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea amet doloremque assumenda. Expedita vitae voluptas accus Libero, error rerum.
+          </textarea>
+      </section>
+      <div class="divider"></div>
+      <section class="my-services">
+        <h1 class="title">my services</h1>
+        <div class="row">
+          <div class="col">
+            <i class="fas fa-desktop icon"></i>
+            <input type="text" value="development" name="service1" title="work" />
+            <textarea cols="30" name="description2" rows="5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius dolorum modi at, maxime suscipit commodi molestiae quia, temporibus non doloremque. Illo enim assumenda, dicta cupiditate incidunt quis sequi dolores.</textarea>
+          </div>
+          <div class="col">
+            <i class="fas fa-rocket icon"></i>
+            <input type="text" value="SEO Optimization" name="service2" title="work" />
+            <textarea cols="30" name="description3" rows="5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius dolorum modi at, maxime suscipit commodi molestiae quia, temporibus non doloremque. Illo enim assumenda, dicta cupiditate incidunt quis sequi dolores.</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <i class="fas fa-database icon"></i>
+            <input type="text" value="database" name="service3" title="work" />
+            <textarea cols="30" name="description4" rows="5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius dolorum modi at, maxime suscipit commodi molestiae quia, temporibus non doloremque. Illo enim assumenda, dicta cupiditate incidunt quis sequi dolores.</textarea>
+          </div>
+          <div class="col">
+            <i class="fas fa-shield-alt icon"></i>
+            <input type="text" value="Data Security" name="service4" title="work" />
+            <textarea cols="30" name="description5" rows="5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius dolorum modi at, maxime suscipit commodi molestiae quia, temporibus non doloremque. Illo enim assumenda, dicta cupiditate incidunt quis sequi dolores.</textarea>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <div style="margin-left: 291px;">
+      <input type="submit" class="btn" name="button" value="Submit">
+      <input type="reset" class="btn" name="reset" value="Reset">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

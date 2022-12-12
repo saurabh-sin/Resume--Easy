@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Resume builder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"
+          ><span class="text-danger"><strong>R</strong></span
+          >esume<span class="text-danger"><strong>Easy</strong></span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/cover.html">Cover letter</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/resume.html"
+                    >Resume Writing</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">Write for us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faq.html">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">
+              Login to ResumeEasy
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="name@example.com"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">
+              Get an ResumeEasy account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="name@example.com"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter a strong password"
+                />
+                <div id="passwordhelp" class="form-text">
+                  Password should contail atleast 8 character and start with
+                  caps.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                  placeholder="Re-Enter your password"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Create account
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portion start -->
+    <section id="main-content" class="span9">
+      <div class="contentWrapper withRelated">
+        <article id="fullArticle">
+          <h1 class="title">
+            How Do I Cancel, Downgrade or Delete My Account?
+          </h1>
+
+          <a
+            href="javascript:window.print()"
+            class="printArticle"
+            title="Print this article"
+            aria-label="Print this Article"
+            ><i class="icon-print"></i
+          ></a>
+          <p>
+            You can cancel a ResumeEasy subscription right from our website
+            without even logging into the app. To do that visit our Contact Us
+            page <a href="/contact.html">here</a> and
+            then click the "Cancel Subscription" option from the menu.&nbsp;
+          </p>
+          <p>
+            From there you'll see an option to search for your account using
+            your email address. If your email address is found, you can click
+            the cancel subscription button. Once you click the button, we'll
+            send you a confirmation email. You will need to confirm the
+            cancellation by following the steps provided via email. If you do
+            not receive the email within a few minutes, try checking your spam
+            folder or searching your inbox for "Resume.io".
+          </p>
+          <p>
+            If your email address is not found, you might want to try searching
+            for a different email address you could have used. If this still
+            doesn't work or you're not receiving a confirmation email, you can
+            try following the steps below to cancel your subscription from the
+            app or reach out to our team for help.
+          </p>
+          <p>
+            <img
+              src="//d33v4339jhl8k0.cloudfront.net/docs/assets/5ba8c7f12c7d3a04dd5ae1a2/images/5fca3dc0de1bfa158fb55611/file-x8vEM7uiS3.png"
+            />
+          </p>
+          
+          <h2>
+            <strong>
+              What happens after I cancel or downgrade my account?</strong
+            >
+          </h2>
+          <p>
+            After you confirm your cancellation you will have premium access for
+            30 days from your last monthly payment or 7 days from your last
+            trial payment. When your premium subscription expires your account
+            is downgraded to free.&nbsp;
+          </p>
+          <p>
+            You can always log back in to
+            <a href="/index.html">ResumeEasy</a> to edit
+            or access your resume, use all of our free features like resume
+            sharing and job search, as well as upgrade again at any point in the
+            future.
+          </p>
+          <h2>How do I delete my account for good?</h2>
+          <p>
+            If you'd like to delete your account for good, scroll to the bottom
+            of the Account Settings page and click Delete Account. See the
+            screenshot below.
+          </p>
+          <p>
+            <img
+              src="//d33v4339jhl8k0.cloudfront.net/docs/assets/5ba8c7f12c7d3a04dd5ae1a2/images/5db8f22b04286364bc9112d8/file-oZ17ikOxsg.png"
+            />
+          </p>
+          <p>
+            Deleting your ResumeEasy account is permanent. Once an account is
+            deleted our support team cannot retrieve your resume or
+            cover&nbsp;letter data.
+          </p>
+        </article>
+
+        <section class="related">
+            <h3>Related Articles</h3>
+            <ul>
+              <li>
+                <a href="/article/q3.html"
+                  ><i class="icon-article-doc"></i
+                  ><span>Can I download my resume to Word or PDF?</span></a
+                >
+              </li>
+    
+              <li>
+                <a href="/article/q5.html"
+                  ><i class="icon-article-doc"></i
+                  ><span>How Do I Cancel, Downgrade or Delete My Account?</span></a
+                >
+              </li>
+    
+             
+            </ul>
+          </section>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

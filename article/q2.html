@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Resume builder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"
+          ><span class="text-danger"><strong>R</strong></span
+          >esume<span class="text-danger"><strong>Easy</strong></span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/cover.html">Cover letter</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/resume.html"
+                    >Resume Writing</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">Write for us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faq.html">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">
+              Login to ResumeEasy
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="name@example.com"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">
+              Get an ResumeEasy account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="name@example.com"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter a strong password"
+                />
+                <div id="passwordhelp" class="form-text">
+                  Password should contail atleast 8 character and start with
+                  caps.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                  placeholder="Re-Enter your password"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Create account
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portion start -->
+    <section id="main-content" class="span9">
+      <div class="contentWrapper withRelated">
+        <article id="fullArticle">
+          <h1 class="title">Can I change the language of my resume?</h1>
+
+          <a
+            href="javascript:window.print()"
+            class="printArticle"
+            title="Print this article"
+            aria-label="Print this Article"
+            ><i class="icon-print"></i
+          ></a>
+          <p>
+            You can change the language of your resume or cover letter anytime.
+            We currently support English, Русский, Nederlands, Español, Svenska,
+            Dansk, Norsk, Deutsch, Français, Português, Italiano, Polski,
+            čeština, Suomi.
+          </p>
+          
+          <p>
+            <strong
+              >Change the Language of Your Resume or Cover
+              Letter</strong
+            >
+          </p>
+          <p>
+            Click in to change the language of your resume by clicking the flag
+            at the top of the editor and selecting your language. See the
+            screenshot below.
+          </p>
+          <p>
+            <img
+              src="//d33v4339jhl8k0.cloudfront.net/docs/assets/5ba8c7f12c7d3a04dd5ae1a2/images/5fca3f2404cebe5254a290ad/file-9WNQv2XoPE.png"
+            />
+          </p>
+          <p>
+            You can change the language of your resume in two quick steps using
+            the new version of our resume editor.
+          </p>
+          <p><strong></strong></p>
+          <p>
+            <strong>Step 1:</strong>&nbsp;Make sure you're using the newest
+            version of the resume editor by confirming your app looks like the
+            screenshot below. If your app looks different, you can click this
+            link to update your version**:<a
+              href="/index.html"
+              >https://resumeeasy/app/create-resume/templates</a
+            ><strong></strong>
+          </p>
+          <p>
+            <strong>Step 2:</strong>&nbsp;Click in to edit the resume you want
+            to change the language for.&nbsp;Change the language of your resume
+            by clicking the flag at the top of the editor and selecting your
+            language. See the screenshot below.
+          </p>
+          <p>We currently support:</p>
+          <ul>
+            <li>English</li>
+            <li>Русский</li>
+            <li>Nederlands</li>
+            <li>Hindi</li>
+            <li>Svenska&nbsp;</li>
+            <li>Dansk</li>
+            <li>Norsk</li>
+            <li>Deutsch</li>
+            <li>Français</li>
+            <li>Português</li>
+            <li>Italiano&nbsp;</li>
+            <li>Polski</li>
+            <li>čeština</li>
+            <li>Suomi</li>
+          </ul>
+          <p>
+            Let us know if there is a language you'd like us to support. We
+            might even ask you for help with a translation! 🌎
+          </p>
+          
+        </article>
+
+        
+      </div>
+      <!--/contentWrapper-->
+
+      <section class="related">
+        <h3>Related Articles</h3>
+        <ul>
+          <li>
+            <a href="/article/q3.html"
+              ><i class="icon-article-doc"></i
+              ><span>Can I download my resume to Word or PDF?</span></a
+            >
+          </li>
+
+          <li>
+            <a href="/article/q5.html"
+              ><i class="icon-article-doc"></i
+              ><span>How Do I Cancel, Downgrade or Delete My Account?</span></a
+            >
+          </li>
+
+         
+        </ul>
+      </section>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

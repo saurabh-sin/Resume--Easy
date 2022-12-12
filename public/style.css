@@ -1,0 +1,535 @@
+.headi
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 2px solid gray; */
+    display: inline;
+    opacity: 0.6;
+}
+.slide2
+{
+    opacity: 0.6;
+}
+.logout{
+    background: red;
+    color:white;
+    padding: 9% 20%;
+    
+}
+.logo
+{
+    font-size: 24px;
+}
+.checked {
+    color: orange;
+  }
+.posted-date {
+    font-size: 12px;
+    color: #afb4b5;
+}
+.m-top-5 {
+    margin-top: 40px;
+}
+
+.Grid--alignCenter {
+    align-items: center;
+}
+
+.Grid {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Grid-cell {
+    flex: 1 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#docsSearch #searchBar {
+    padding: 0;
+    margin-top: 12px;
+}
+#docsSearch h1, #docsSearch #searchBar {
+    width: 100%;
+    max-width: 698px;
+    margin: 0 auto;
+}
+#searchBar {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 2em 0;
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+}
+form {
+    margin: 0 0 18px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+#docsSearch {
+    position: relative;
+    background: #262b33 url(images/f11.webp) no-repeat 42% 50%;
+    background-size: cover;
+    color: #fff;
+    padding: 132px 20px 170px;
+    margin-bottom: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#docsSearch #searchBar .search-query {
+    font-size: 19px;
+    line-height: 24px;
+    font-family: "TT Commons",-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+    padding: 13px 70px 13px 20px;
+    border-radius: 4px;
+    border: 0;
+    color: #262b33;
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s,-webkit-box-shadow .3s;
+    caret-color: #2196f3;
+}
+.search-query{
+    width: 552px;
+}
+.icon-search
+{
+    line-height: 40px;
+}
+.hh{
+    
+    color: black;
+}
+.list-group{
+    width: 800px;
+    margin: auto;
+    display: table;
+}
+.list-group-item{
+    text-align: center;
+   
+}
+/* Contact us */
+.hh1{
+    color: white;
+    text-align: center;
+    font-size: 76px;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+  }
+.hh2
+{
+    text-align: center;
+    font-size: 24px;
+}
+#docsSearch1 {
+    position: relative;
+    background: #262b33 url(images/contact1.jpg) no-repeat 42% 50%;
+    background-size: cover;
+    color: #fff;
+    padding: 132px 20px 170px;
+    margin-bottom: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 1;
+}
+.hero-wrap {
+    min-height: 425px;
+}
+.main {
+    max-width: 1260px;
+    margin: 0 auto;
+    background-color: gray;
+    text-align: center;
+}
+.main_h
+{
+    font-size: 50px;
+    
+}
+.para
+{
+    text-align: center;
+    font-size: 20px;
+}
+.discrip
+{
+    text-align:center;
+    background-color: gray;
+    font-size: 50px;
+}
+.wh{
+    color: blue;
+}
+
+ .p1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.p1 {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 1px;
+}
+.lead{
+    font-size: 25px;
+}
+
+
+.button--red {
+    border-color: #e44747;
+    background: #e44747;
+    color: #fff;
+}
+
+
+.button--big, .button--medium {
+    border-radius: 3.2rem;
+    line-height: 1;
+}
+.button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    border: .3rem solid;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color .25s cubic-bezier(.45,.05,.55,.95) 0ms,border-color .25s cubic-bezier(.45,.05,.55,.95) 0ms,box-shadow .25s cubic-bezier(.45,.05,.55,.95) 0ms,color .25s cubic-bezier(.45,.05,.55,.95) 0ms,opacity .25s cubic-bezier(.45,.05,.55,.95) 0ms;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+
+.btn_re{
+    
+    border-radius: 10px;
+    font-size: 30px;
+}
+.step{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 75px;
+}
+.hh3
+{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    color: black;
+    text-align: center;
+    
+    font-size: 50px;
+    
+}
+.hh3:hover{
+    color: blue;
+}
+.cnt{
+
+    
+    margin: 10px 10px 10px 10px;
+    margin-right: 10px;
+    /* background-color: gray; */
+    opacity: 1.5;
+}
+.cnt1{
+    background-color: gray;
+}
+
+    /* CONTACT css */
+.contact-image
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/contact1.jpg);
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact-text
+{
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 15%;
+}
+.contact-form{
+    padding-left: 35%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+.contact-form img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.card-img
+{
+   
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 13rem;
+}
+.input-area
+{
+    height: 65px;
+}
+.contact-button
+{
+    margin-left: 12%;
+    background-color: red;
+    border-radius: 4px;
+}
+ /** About Us **/
+.about-image
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about-us.jpg);
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  /* FAQ PROCESS */
+
+.faq1
+{
+    /* margin: auto; */
+    margin-left: 208px;
+    margin-right: 208px;
+    margin-top: 30px;
+}
+.faq-link
+{
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px 23px;
+    margin-left: 83px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+.user 
+{
+    font-size: 30px;
+}
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: -1px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .collapsible:hover {
+    background-color: #ccc;
+  }
+  .content {
+    padding: -1 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-size: 18px;
+  }
+  
+/* Login and registration css */
+
+.login-container {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    /* border: 2px solid red; */
+    background-image: url(images/login-bg-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-register {
+    height: 900px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 2em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+    overflow: hidden; 
+    background: linear-gradient(180deg, rgba(65,4,119,1) 0%, rgba(22,147,198,1) 58%, rgba(255,255,255,0.1407913507199755) 82%);
+    color:#ffffff;
+}
+
+/* Nav Buttons  */
+.nav-buttons {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  opacity: 1;
+  margin-bottom: 3em;
+}
+button {
+    font-size: 1.5em;
+    margin-right:1em;
+    border:0px;
+    cursor: pointer;
+ 
+}
+button:focus {
+    outline: 0px;
+}
+button.active {
+    padding-bottom: 10px;
+    border-bottom: solid 2px #1059FF;
+} 
+/* footer: forgot section */
+ #forgot {
+      position: relative;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-top: 24px;
+      margin-top: -425px; 
+      border-top: solid 1px rgba(255,255,255,.3);    
+  }
+
+  /* form styling */
+  .form-group-login input {
+      width: 100%;
+      height: 35px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,.2);
+  }
+  .form-group-login label {
+    text-transform: uppercase;
+  }
+  .submit {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1em;
+      text-align: center;
+      color: rgba(255,255,255, 1);
+      padding: 8px 0px;
+      width: 100%;
+      height: 35px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 23px;
+      /* background-color: rgba(16,89,255, 1); */
+  
+  }
+
+  /* form positioning and animation */
+  form, #forgot { 
+      position: relative;
+      transition: all .5s ease;
+      
+  }
+  #loginBtn, #registerBtn {
+      transition: all .5s ease;
+
+  }
+  form#loginform {
+  left:0px;
+  }
+
+  form#registerform {
+  left:500px;
+  top:-290px;
+  opacity: 0;;
+ } 
+    
+ #forgot
+ {
+     color: white;
+ }
+
+/* TEMPLATE3 CSS  */
+
+.row-container
+{
+    border: 4px solid red;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image-area-t3
+{
+    border: 2px solid blue;
+    width: 300px;
+    background-color: gray;
+    height: 700px;
+}
+.link{
+    text-decoration: none;
+}

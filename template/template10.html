@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- font-awesome icon -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+    .container
+{
+    /* border: 2px solid red; */
+    height: 800px;
+}
+.image-area{
+    background-color: black;
+    height: 150px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.head
+{
+    border: none;
+    background: transparent;
+    display: flex;
+    float: right;
+    margin-top: 46px;
+    font-size: 51px;
+    color: white;
+}
+img {
+    border-radius: 50%;
+    /* border: 2px solid red; */
+    margin-top: -91px;
+    margin-left: 30px;
+    background-color: white;
+    position: relative;
+
+  }
+  .choose-file
+  {
+      margin-top: 50px;
+  }
+  .vertical {
+    border-left: 2px solid black;
+    
+  } 
+.txt
+{
+    border: none;
+    background: transparent;
+}
+
+.range-wrap {
+    position: relative;
+    margin: 0 auto 3rem;
+  }
+  .range {
+    width: 100%;
+  }
+  .bubble {
+    background: red;
+    color: white;
+    padding: 4px 12px;
+    position: absolute;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bubble::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: red;
+    top: -1px;
+    left: 50%;
+  }
+  
+  body {
+    margin: 2rem;
+  }
+</style>
+<title>Template design
+    </title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="image-area ">
+              <input type="text" placeholder="YOUR NAME" class="head">
+              <!-- <img src="a4.jpg" alt="" width="200" height="200"> -->
+          </div>
+          <img src="images/a4.jpg" id="myimg" alt="" width="200" height="200">
+          <br>
+          <br>
+          <br>
+
+          <div class="row" style="margin-top: 40px;">
+
+            <div class="col-sm-8">
+              <h4 style="color: red;">Profile</h4>
+              <textarea  class="form-control txt" rows="8" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis tempora libero laboriosam quisquam sequi tenetur commodi nisi nulla, soluta minima, numquam dignissimos id atque saepe corporis fuga deleniti eos!" ></textarea>
+              <hr>
+    
+              <h4 style="color: red;">Education</h3>
+              <textarea  class="form-control txt" rows="2" placeholder="Highschool details/percentage"></textarea>
+              <textarea  class="form-control txt" rows="2" placeholder="Intermediate details/percentage"></textarea>
+              <textarea  class="form-control txt" rows="2" placeholder="College details/percentage"></textarea>
+              <hr>
+              <h4 style="color: red;">Experience</h3>
+              <textarea  class="form-control txt" rows="1" placeholder="Research/work-experience"></textarea>
+              <textarea  class="form-control txt" rows="5" placeholder="Experience details point-wise">
+                
+              </textarea>
+              <hr>
+              <h4 style="color: red;">PROJECTS</h3>
+              <h5>Project:1</h5>
+              <textarea  class="form-control txt" rows="1" placeholder="Project topic"></textarea>
+              <textarea  class="form-control txt" rows="4" placeholder="Summary about your project write here"></textarea>
+              <textarea  class="form-control txt" rows="1" placeholder="Provide your project link here"></textarea>
+              <hr>
+              <h5>Project:2</h5>
+              <textarea  class="form-control txt" rows="1" placeholder="Project topic"></textarea>
+              <textarea  class="form-control txt" rows="4" placeholder="Summary about your project write here"></textarea>
+              <textarea  class="form-control txt" rows="1" placeholder="Provide your project link here"></textarea>
+              <hr>
+              <h5>Project:3</h5>
+              <textarea  class="form-control txt" rows="1" placeholder="Project topic"></textarea>
+              <textarea  class="form-control txt" rows="4" placeholder="Summary about your project write here"></textarea>
+              <textarea  class="form-control txt" rows="1" placeholder="Provide your project link here"></textarea>
+              <hr>
+            </div>
+
+            <div class="col-sm-4 vertical" ;">
+              <h4 style="color: red;">Contact</h3>
+              <!-- <textarea id="achievments" class="form-control" rows="8"></textarea>   -->
+              <i class="fa fa-envelope"> <input type="text" class="txt" placeholder="example@gmail.com"></i>
+              <i class="fa fa-phone"> <input type="text" class="txt" placeholder="1234567-89"></i>
+              <i class="fa fa-map-marker"> <input type="text" class="txt" placeholder="234 padri gkp"></i>
+              <i class="fa fa-linkedin"> <input type="text" class="txt" placeholder="linkedin.com/in/username"></i>
+              <i class="fa fa-github"> <input type="text" class="txt" placeholder="github.com/git/username"></i>
+              
+
+              <hr>
+              <h4 style="color: red;">Skills</h3>
+
+                <div class="range-wrap">
+                  <!-- <label for="customRange3" class="form-label"></label> -->
+                  <textarea  class="form-control txt" rows="1" placeholder="Skill #1"></textarea>
+                  <input type="range" class="range">
+                  <output class="bubble"></output>
+                </div>
+
+                <div class="range-wrap">
+                  <!-- <label for="customRange3" class="form-label"></label> -->
+                  <textarea  class="form-control txt" rows="1" placeholder="Skill #2"></textarea>
+                  <input type="range" class="range">
+                  <output class="bubble"></output>
+                </div>
+
+                <div class="range-wrap">
+                  <!-- <label for="customRange3" class="form-label"></label> -->
+                  <textarea  class="form-control txt" rows="1" placeholder="Skill #3"></textarea>
+                  <input type="range" class="range">
+                  <output class="bubble"></output>
+                </div>
+
+                <textarea  class="form-control txt" rows="5" placeholder="write here if you have an extra or more skills"></textarea>
+
+
+                
+               
+              <hr>
+
+              <h4 style="color: red;">Achievements</h3>
+                
+                <textarea  class="form-control txt" rows="9" placeholder="Write about your achievements that you got during your study/job period"></textarea>
+
+                <hr>
+              <h4 style="color: red;">Hobbies</h3>
+                <i class="fa fa-image"></i> <i class="fa fa-book"></i> <i class="fa fa-music"></i>  <i class="fa fa-dance"></i>
+                <textarea  class="form-control txt" rows="9" placeholder="About your hobbies"></textarea>
+                <hr>
+              
+          </div>
+          </div> 
+
+          
+      </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <script>
+         const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+     </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
